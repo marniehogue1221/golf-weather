@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+.city {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  display: inline-block;
+  width: 40%;
+}
