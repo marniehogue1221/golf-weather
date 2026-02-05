@@ -1,4 +1,4 @@
-const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
+const API_KEY = "7a7a38f62b2d3224161e640210fc6f89";
 
 const cities = [
   { name: "Tucson,US", tempEl: "temp-tucson", windEl: "wind-tucson", rainEl: "rain-tucson", verdictEl: "verdict-tucson" },
@@ -6,7 +6,7 @@ const cities = [
 ];
 
 cities.forEach(city => {
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.name}&units=imperial&appid=${API_KEY}`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.name}&units=imperial&appid=${7a7a38f62b2d3224161e640210fc6f89}`)
     .then(res => res.json())
     .then(data => {
       const temp = data.main.temp;
