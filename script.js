@@ -6,7 +6,7 @@ const cities = [
 ];
 
 cities.forEach(city => {
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.name}&units=imperial&appid=${7a7a38f62b2d3224161e640210fc6f89}`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.name}&units=imperial&appid=${API_KEY}`)
     .then(res => res.json())
     .then(data => {
       const temp = data.main.temp;
