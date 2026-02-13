@@ -18,7 +18,8 @@ cities.forEach(city => {
       document.getElementById(city.windEl).textContent = `💨 Wind: ${wind} mph`;
       document.getElementById(city.rainEl).textContent = `🌧 Rain: ${rainChance}%`;
 
-      let verdict = "🏌️ GREAT DAY";
+      // ideal temp is between 65 and 75 F and ideal wind <= 5 mph
+      let verdict = "🏌️ GREAT DAY"; 
       if (rainChance > 30 || wind > 12 || temp < 55) verdict = "😐 PLAYABLE";
       if (rainChance > 50 || wind > 18 || temp < 45) verdict = "🚫 SKIP IT";
 
